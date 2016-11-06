@@ -6,7 +6,7 @@ Pięciu filozofów siedzi przy okrągłym stole. Każdy z nich ma swój talerz z
 
 # Problem
   
-Problemem jest opracowanie algorytmu umożliwiającego każdemu filozofowi jedzenia spaghetti (żaden z nich nie będzie w ciągłym stanie myślenia), zakładając, że żaden z filozofów nie zna zamiarów pozostałych.
+Problemem jest opracowanie algorytmu dla każdego z filozofów umożliwiającego mu jedzenia spaghetti (żaden z nich nie będzie w ciągłym stanie myślenia), zakładając, że żaden z filozofów nie zna zamiarów pozostałych.
 
 
 # Rozszerzenie Problemu
