@@ -1,18 +1,15 @@
 # SO_P1-Classic_Synchronization_Problem
 
-# The Dining Philosophers Problem
+# Drinking Philosophers Problem
 
-Pięciu filozofów siedzi przy okrągłym stole. Każdy z nich ma swój talerz ze spaghetti, oraz pomiędzy każdymi dwoma sąsiednimi filozofami leży widelec. Każdy z nich musi myśleć albo jeść. Do jedzenia spaghetti potrzebują dwóch widelców (lewego i prawego), ale jednego widelca może używać tylko jeden filozof na raz. Po zjedzeniu filozof odkłada widelce na swoje miejsce. Jedzenie i zapotrzebowanie każdego filozofa nigdy się nie kończy.
+Jest to uogólnienie Problemu Ucztujących Filozofów.
+Filozofowie siedzą przy okrągłym stole. Pomiędzy każdym z nich leży butelka z trunkiem (butelki mają przypisane miejsca). Każdy filozof jest w jednym z trzech stanów: (1) śpiący, (2) spragniony, albo (3) pijący. Mogą oni pić tylko z butelek przypisanych do miejsc po ich lewej albo prawej stronie. Śpiący filozof po obudzeniu jest spragniony. Spragniony filozof wybiera sobie niepusty zbiór butelek, z których chce się napić, ale może zacząć pić tylko jeśli ma wszystkie wymagane butelki. Pozostaje w stanie pijącym przez skończoną ilość czasu, po czym zasypia na skończoną ilość czasu. Sąsiadujący filozofowie mogą wysyłać miedzy sobą wiadomości (wysłanie zajmuje pewną skończoną ilość czasu). Butelki także mogą być wysyłane.
 
 # Problem
-  
-Problemem jest opracowanie algorytmu dla każdego z filozofów umożliwiającego mu jedzenia spaghetti (żaden z nich nie będzie w ciągłym stanie myślenia), zakładając, że żaden z filozofów nie zna zamiarów pozostałych.
 
+Problem polega na tym, aby opracować nieprobabilistyczne rozwiązanie spełniające ograniczenia:
+- żaden z filozofów nie może pozostać spragniony na zawsze
+- wszyscy przestrzegają tych samych zasad w zdobywaniu i oddawaniu butelek. Nie ma ustalonych priorytetów
+- filozofowie wysyłają i otrzymują skończoną ilość wiadomości pomiędzy zmianami stanu
+- rozwiązanie ma pozwolić na picie kilku filozofom na raz jeśli to możliwe
 
-# Rozszerzenie Problemu
-
-Propozycja 1: 
-Sytuacja z klasycznego problemu, różniąca się tym, że przy stole siedzi sześciu filozofów, a po środku stołu leży dodatkowy widelec, do którego każdy z nich ma dostęp
-
-Propozycja 2:
-Do stołu opisanego w klasycznym problemie dostawiamy drugi taki sam w taki sposób, że jedna z osób z dostawionego stołu ma dostęp do jednego z widelców z oryginalnego stołu (sytucja zobrazowana w pliku prop2.png)
