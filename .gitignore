@@ -1,1 +1,5 @@
 main
+main.o
+philosopher.o
+table.o
+mailbox.o
